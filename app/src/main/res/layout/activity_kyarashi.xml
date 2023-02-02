@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kyarashi_sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kyarashi_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@+id/kyarashi_hozon"
+            android:layout_width="92dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kyarashi_hozon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="get image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editText_kyaraname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/editText_kyaraname"
+            android:inputType="text"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_hozon" />
+
+        <TextView
+            android:id="@+id/kyarashi_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kyarashi_type"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_kyaraname" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/karashi_ryuha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kyarashi_ryuha"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+        <Spinner
+            android:id="@+id/spinner_ryuha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/spinner_ryuha"
+            android:spinnerMode="dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/karashi_ryuha" />
+
+        <EditText
+            android:id="@+id/editText_kairyuha"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/kyarashi_ryuha"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_ryuha"
+            app:layout_constraintStart_toEndOf="@+id/spinner_ryuha"
+            app:layout_constraintTop_toTopOf="@+id/spinner_ryuha" />
+
+        <TextView
+            android:id="@+id/kyarashi_ryugi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/kyarashi_ryugi"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_ryuha" />
+
+        <EditText
+            android:id="@+id/edittext_ryugi"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/kyarashi_ryugi"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kyarashi_ryugi"
+            app:layout_constraintStart_toEndOf="@+id/kyarashi_ryugi"
+            app:layout_constraintTop_toTopOf="@+id/kyarashi_ryugi" />
+
+        <TextView
+            android:id="@+id/kyarashi_kyuteki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/kyarashi_kyuteki"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_ryugi" />
+
+        <EditText
+            android:id="@+id/editText_kyuteki"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/editText_kyuteki"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kyarashi_kyuteki"
+            app:layout_constraintStart_toEndOf="@+id/kyarashi_kyuteki"
+            app:layout_constraintTop_toTopOf="@+id/kyarashi_kyuteki" />
+
+        <TextView
+            android:id="@+id/kyarashi_kaikyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kyarashi_kaikyu"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_kyuteki" />
+
+        <Spinner
+            android:id="@+id/spinner_kaikyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:entries="@array/spinner_kaikyu"
+            android:spinnerMode="dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_kaikyu" />
+
+        <TextView
+            android:id="@+id/kyarashi_kouseki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/kyarashi_kouseki"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kyarashi_kaikyu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kyarashi_kaikyu"
+            app:layout_constraintTop_toTopOf="@+id/kyarashi_kaikyu" />
+
+        <EditText
+            android:id="@+id/editText_kouseki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/editText_kouseki"
+            android:inputType="number"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/kyarashi_kouseki"
+            app:layout_constraintTop_toTopOf="@+id/kyarashi_kouseki" />
+
+        <TextView
+            android:id="@+id/kyarashi_nenrei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kyarashi_nenrei"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_kaikyu" />
+
+        <EditText
+            android:id="@+id/editText_nenrei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/editText_nenrei"
+            android:inputType="number"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/spinner_kaikyu"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_nenrei" />
+
+        <TextView
+            android:id="@+id/kyarashi_seibetu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kyarashi_seibetu"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kyarashi_nenrei"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toEndOf="@+id/kyarashi_nenrei"
+            app:layout_constraintTop_toTopOf="@+id/kyarashi_nenrei" />
+
+        <TextView
+            android:id="@+id/kyarashi_omotenokao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kyarashi_omotenokao"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+        <EditText
+            android:id="@+id/editText_omotenokao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/editText_omotenokao"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_omotenokao" />
+
+        <TextView
+            android:id="@+id/kyarashi_sinnen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kyarashi_sinnen"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kyarashi_omotenokao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.336"
+            app:layout_constraintStart_toEndOf="@+id/kyarashi_omotenokao"
+            app:layout_constraintTop_toTopOf="@+id/kyarashi_omotenokao" />
+
+        <EditText
+            android:id="@+id/edittext_sinnen"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="@string/kyarashi_sinnen"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_omotenokao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_sinnen" />
+
+        <TextView
+            android:id="@+id/kyarashi_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kyarashi_memo"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_omotenokao" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/kyarashi_seibetu"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_seibetu">
+
+            <RadioButton
+                android:id="@+id/checkbox_otoko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_otoko" />
+
+            <RadioButton
+                android:id="@+id/checkbox_onna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/checkbox_onna" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_type">
+
+            <RadioButton
+                android:id="@+id/checkbox_ninjya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_ninjya" />
+
+            <RadioButton
+                android:id="@+id/checkbox_ipan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/checkbox_ipan" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edittext_memo"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/activity_kyarashi_layout"
+            android:hint="@string/kyarashi_memo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kyarashi_memo" />
+
+        <Button
+            android:id="@+id/intent_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="次のページ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_memo" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroup1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/editText_kyaraname"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <fragment
+            android:id="@+id/container"
+            android:name="com.example.sinobigami.SubFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85"
+            tools:layout="@layout/grid_cell_element" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    >
+</ScrollView>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">sinobigami</string>
+    <string name="kyarashi_hozon">保存</string>
+    <string name="editText_kyaraname">キャラの名前</string>
+    <string name="kyarashi_type">タイプ</string>
+    <string name="checkbox_ninjya">忍者</string>
+    <string name="checkbox_ipan">一般人</string>
+    <string name="kyarashi_ryuha">  流派 </string>
+    <string-array name="spinner_ryuha">
+        <item>斜歯忍軍</item>
+        <item>鞍馬神流</item>
+        <item>隠忍の血統</item>
+        <item>比良坂機関</item>
+        <item>私立御斎学園</item>
+        <item>ハグレモノ</item>
+        <item>その他</item>
+    </string-array>
+    <string name="kyarashi_ryugi">流儀</string>
+    <string name="edittext_ryugi">流儀</string>
+    <string name="kyarashi_kyuteki">仇敵</string>
+    <string name="editText_kyuteki">仇敵</string>
+    <string name="kyarashi_kaikyu">階級</string>
+    <string-array name="spinner_kaikyu">
+        <item>草</item>
+        <item>下忍</item>
+        <item>下忍頭</item>
+        <item>中忍</item>
+        <item>中忍頭</item>
+        <item>上忍</item>
+        <item>上忍頭</item>
+        <item>頭領</item>
+    </string-array>
+    <string name="kyarashi_kouseki">功績点</string>
+    <string name="editText_kouseki">   0   </string>
+    <string name="kyarashi_nenrei">年齢</string>
+    <string name="editText_nenrei">   20   </string>
+    <string name="kyarashi_seibetu">性別</string>
+    <string name="checkbox_otoko">男</string>
+    <string name="checkbox_onna">女</string>
+    <string name="kyarashi_omotenokao">表の顔</string>
+    <string name="editText_omotenokao">  医者  </string>
+    <string name="kyarashi_sinnen">信念</string>
+    <string name="kyarashi_memo">  設定</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
